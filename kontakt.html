@@ -22,32 +22,33 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="slike/logo2.png" style="width:100%">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-      <i class="fa fa-users w3-xxlarge"></i>
-      <p>O NAMA</p>
+  <!-- Avatar image in top left corner -->
+  <img src="slike/logo2.png" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-users w3-xxlarge"></i>
+    <p>O NAMA</p>
+  </a>
+  <a href="kontakt.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-comments w3-xxlarge"></i>
+    <p>KONTAKT</p>
+  </a>
+  <a href="materijali.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>MATERIJALI</p>
+  </a>
+  <li class="dropdown">
+    <a href="radovi.html" class="dropbtn w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-camera w3-xxlarge"></i>
+      <p>RADOVI</p>
+      <div class="dropdown-content">
+        <a href="#">Ekterijer</a>
+        <a href="#">Interijer</a>
+        <a href="#">Groblje</a>
+      </div>  
     </a>
-    <a href="kontakt.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-comments w3-xxlarge"></i>
-      <p>KONTAKT</p>
-    </a>
-    <a href="materijali.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-cubes w3-xxlarge"></i>
-      <p>MATERIJALI</p>
-    </a>
-    <li class="dropdown">
-      <a href="radovi.html" class="dropbtn w3-bar-item w3-button w3-padding-large w3-hover-black">
-        <i class="fa fa-camera w3-xxlarge"></i>
-        <p>RADOVI</p>
-        <div class="dropdown-content">
-          <a href="#">Ekterijer</a>
-          <a href="#">Interijer</a>
-          <a href="#">Groblje</a>
-        </div>  
-      </a>
-      </li>
-  </nav>
+    </li>
+</nav>
+
   
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
@@ -63,16 +64,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center" id="home" style="height: 300px; display: flex; justify-content: left; align-items: flex-end;">
-    <h1 class="w3-jumbo" style="font-family: Montserrat, sans-serif;" ><span class="w3-hide-small" style="color: red; font-size: 120px;">KLESARSTVO</span><span style="color:black;font-size: 120px;">  PERIC</span></h1>
+    <h1 class="w3-jumbo" style="font-family: Montserrat, sans-serif;" ><span class="w3-hide-small" style="color: black; font-size: 120px;">KONTAKTIRAJTE NAS</span></h1>
   </header>
   <hr style="width:100%; color: black !important;" class="w3-opacity">
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about" style="margin-left: 65px;">
-    <h2 style="font-size: 40px; color: red;">O nama</h2>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 style="color: red;">NP GRANIT</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p style="font-size: 20px; color: black;">Klesarstvo Perić je obiteljsko poduzeće sa tradicijom dugom 5 desetljeca. Ponosimo se dugom tradicijom kvalitetnih proizvoda od kamena iz naše radione u kojoj ujedino poslujemo od 1965 godine u Slavonskome Brodu.
-      Firma je trenutno i dalje u 3 generacije obitelji Perić koja nastoji i dalje da odrzi svoju tradijicu.</p>
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sv. Lovre 9,35000 Slavonski Brod</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mob: 095 3535 674, Mob: 095 3535 675</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: nikolagranitex@gmail.com</p>
+    </div><br>
+   
+  <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->

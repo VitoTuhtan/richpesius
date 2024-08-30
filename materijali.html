@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Klesarstvo Perić</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
@@ -18,36 +18,43 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 </head>
-<body class="w3-black">
+<body class="w3-black" style="background-image: url('slike/kul_kamenja/calacatta-mramor.jpg') !important; background-position: center;">
 
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-    <!-- Avatar image in top left corner -->
-    <img src="slike/logo2.png" style="width:100%">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-users w3-xxlarge"></i>
-      <p>O NAMA</p>
-    </a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-      <i class="fa fa-comments w3-xxlarge"></i>
-      <p>KONTAKT</p>
-    </a>
-    <a href="radovi.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+<nav class="w3-sidebar w3-bar-b lock w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="slike/logo2.png" style="width:100%">
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-users w3-xxlarge"></i>
+    <p>O NAMA</p>
+  </a>
+  <a href="kontakt.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-comments w3-xxlarge"></i>
+    <p>KONTAKT</p>
+  </a>
+  <a href="materijali.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cubes w3-xxlarge"></i>
+    <p>MATERIJALI</p>
+  </a>
+  <li class="dropdown">
+    <a href="radovi.html" class="dropbtn w3-bar-item w3-button w3-padding-large w3-hover-black">
       <i class="fa fa-camera w3-xxlarge"></i>
       <p>RADOVI</p>
+      <div class="dropdown-content">
+        <a href="#">Ekterijer</a>
+        <a href="#">Interijer</a>
+        <a href="#">Groblje</a>
+      </div>  
     </a>
-    <a href="materijali.html" class="w3-bar-item w3-button w3-padding-large w3-black">
-      <i class="fa fa-cubes w3-xxlarge"></i>
-      <p>MATERIJALI</p>
-    </a>
-  </nav>
-  
+    </li>
+</nav>
+
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
       <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">O NAMA</a>
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">KONTAKT</a>
+      <a href="kontakt.html" class="w3-bar-item w3-button" style="width:25% !important">KONTAKT</a>
       <a href="radovi.html" class="w3-bar-item w3-button" style="width:25% !important">RADOVI</a>
       <a href="materijali.html" class="w3-bar-item w3-button" style="width:25% !important">MATERIJALI</a>
     </div>
@@ -56,142 +63,325 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main"> 
 <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home" style="background-image: url('slike/kul_kamenja/calacatta-mramor.jpg') !important; background-size: cover; background-position: center;">
+  <header class="w3-container w3-padding-32 w3-center" id="home">
     <h1 class="w3-jumbo" style="font-family: Montserrat, sans-serif;"><span class="w3-hide-small" style="color: red;">Vrste </span><span style="color: black;">materijala</span></h1>
   </header>
 
  
 <!-- Portfolio Section -->
 <div class="w3-padding-64 w3-content" id="photos">
-  <h2 class="w3-text-light-grey">Granit</h2>
+  <h2 class="w3-text-black">Granit</h2>
   <hr style="width:100%" class="w3-opacity">
 <!-- Grid for photos -->
-<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-row-padding w3-text-black" style="margin:0 -16px">
   <div class="w3-half">
-    <div>
+    <div class="gallery">
+      <a href="#img1">
       <img src="slike/ukradena_kamenja/granit/african_red.jpg" style="width:100%">
+      </a>
       <p>african red</p>
     </div>
     <div>
+      <a href="#img2">
       <img src="slike/ukradena_kamenja/granit/balmoral-red.jpg" style="width:100%">
       <p>balmoral red</p>
     </div>
     <div>
+      <a href="#img3">
       <img src="slike/ukradena_kamenja/granit/baltic_brown.jpg" style="width:100%">
       <p>baltic brown</p>
     </div>
     <div>
+      <a href="#img4">
       <img src="slike/ukradena_kamenja/granit/bengal-black.jpg" style="width:100%">
       <p>bengal black</p>
     </div>
     <div>
+      <a href="#img5">
       <img src="slike/ukradena_kamenja/granit/beola-bianca.jpg" style="width:100%">
       <p>beola bianca</p>
     </div>
     <div>
+      <a href="#img6">
       <img src="slike/ukradena_kamenja/granit/bianco-cristal.jpg" style="width:100%">
       <p>bianco cristal</p>
     </div>
     <div>
+      <a href="#img7">
       <img src="slike/ukradena_kamenja/granit/bianco_sardo.jpg" style="width:100%">
       <p>bianco sardo</p>
     </div>
     <div>
+      <a href="#img8">
       <img src="slike/ukradena_kamenja/granit/Black-Cosmic.jpg" style="width:100%">
       <p>black cosmic</p>
     </div>
     <div>
+      <a href="#img9">
       <img src="slike/ukradena_kamenja/granit/Black-Galaxy.jpg" style="width:100%">
       <p>black galaxy</p>
     </div>
     <div>
+      <a href="#img10">
       <img src="slike/ukradena_kamenja/granit/Blue-in-the-night.jpg" style="width:100%">
       <p>blue in the night</p>
     </div>
     <div>
+      <a href="#img11">
       <img src="slike/ukradena_kamenja/granit/verde-san-francisco.jpg" style="width:100%">
       <p>verde san francisco</p>
     </div>
     <div>
+      <a href="#img12">
       <img src="slike/ukradena_kamenja/granit/imperial-white.jpg" style="width:100%">
       <p>imperial white</p>
     </div>
     <div>
+      <a href="#img13">
       <img src="slike/ukradena_kamenja/granit/juparana_colombo.jpg" style="width:100%">
       <p>juparana colombo</p>
     </div>
     <div>
+      <a href="#img14">
       <img src="slike/ukradena_kamenja/granit/zimbabwe_black.jpg" style="width:100%">
       <p>zimbabwe black</p>
     </div>
     <div>
+      <a href="#img15">
       <img src="slike/ukradena_kamenja/granit/labrador-blue-pearl.jpg" style="width:100%">
       <p>labrador blue pearl</p>
     </div>
+
+    <div id="img1" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/african_red.jpg" alt="Image 1">
   </div>
+
+  <div id="img 15" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/labrador-blue-pearl.jpg" alt="Image 15">
+  </div>
+  
+  <div id="img14" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/zimbabwe_black.jpg" alt="Image 14">
+  </div>
+
+  <div id="img13" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/juparana_colombo.jpg" alt="Image 13">
+  </div>  
+
+  <div id="img12" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/imperial-white.jpg" alt="Image 12">
+  </div> 
+
+  <div id="img11" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/verde-san-francisco.jpg" alt="Image 11">
+  </div> 
+
+  <div id="img10" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/Blue-in-the-night.jpg" alt="Image 10">
+  </div> 
+
+  <div id="img9" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/Black-Galaxy.jpg" alt="Image 9">
+  </div> 
+
+  <div id="img8" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/Black-Cosmic.jpg" alt="Image 8">
+  </div> 
+
+  <div id="img7" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/bianco_sardo.jpg" alt="Image 7">
+  </div> 
+
+  <div id="img6" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/beola-bianca.jpg" alt="Image 6">
+  </div>
+
+  <div id="img5" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/bengal-black.jpg" alt="Image 5">
+  </div>
+
+  <div id="img4" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/baltic_brown.jpg" alt="Image 4">
+  </div>
+
+  <div id="img3" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/balmoral-red.jpg" alt="Image 3">
+  </div>
+
+  <div id="img2" class="lightbox">
+    <a href="#"></a>
+    <img src="slike/ukradena_kamenja/granit/african_red.jpg" alt="Image 2">
+  </div>
+
+</div>
 
   <div class="w3-half">
     <div>
+      <a href="#img30">
       <img src="slike/ukradena_kamenja/granit/labrador_emerald_pearl.jpg" style="width:100%">
       <p>labrador emerald pearl</p>
     </div>
     <div>
+      <a href="#img29">
       <img src="slike/ukradena_kamenja/granit/multicolor_red.jpg" style="width:100%">
       <p>multicolor red</p>
     </div>
     <div>
+      <a href="#img28">
       <img src="slike/ukradena_kamenja/granit/nero-zimbabwe-cetkano.jpg" style="width:100%">
       <p>nero zimbabwe cetkano</p>
     </div>
     <div>
+      <a href="#img27">
       <img src="slike/ukradena_kamenja/granit/nero_angola.jpg" style="width:100%">
       <p>nero angola</p>
     </div>
     <div>
+      <a href="#img26">
       <img src="slike/ukradena_kamenja/granit/new_imperial_red.jpg" style="width:100%">
       <p>new imperial red</p>
     </div>
     <div>
+      <a href="#img25">
       <img src="slike/ukradena_kamenja/granit/olive-green.jpg" style="width:100%">
       <p>olive green</p>
     </div>
     <div>
+      <a href="#img24">
       <img src="slike/ukradena_kamenja/granit/paradiso-light.jpg" style="width:100%">
       <p>paradiso light</p>
     </div>
     <div>
+      <a href="#img23">
       <img src="slike/ukradena_kamenja/granit/paradiso.jpg" style="width:100%">
       <p>paradiso</p>
     </div>
     <div>
+      <a href="#img22">
       <img src="slike/ukradena_kamenja/granit/paradiso_bash.jpg" style="width:100%">
       <p>paradiso bash</p>
     </div>
     <div>
+      <a href="#img21">
       <img src="slike/ukradena_kamenja/granit/rosa_beta.jpg" style="width:100%">
       <p>rosa beta</p>
     </div>
     <div>
+      <a href="#img20">
       <img src="slike/ukradena_kamenja/granit/rosa_porrino.jpg" style="width:100%">
       <p>rosa porrino</p>
     </div>
     <div>
+      <a href="#img19">
       <img src="slike/ukradena_kamenja/granit/giallo_veneziano.jpg" style="width:100%">
       <p>giallo veneziano</p>
 
     </div>
-    <div>
+    <di id="mg16"v>
+      <a href="#img18">
       <img src="slike/ukradena_kamenja/granit/verde_gloria.jpg" style="width:100%">
       <p>verde gloria</p>
     </div>
-    <div>
+    <di id="mg17"v>
+      <a href="#img17">
       <img src="slike/ukradena_kamenja/granit/verde_marina.jpg" style="width:100%">
       <p>verde marina</p>
     </div>
-    <div>
+    <di id="mg16"v>
+    <a href="#img16">
       <img src="slike/ukradena_kamenja/granit/zimbabwe_black.jpg" style="width:100%">
       <p>zimbabwe black</p>
     </div>
+    
+    <div id="img16" class="lightbox">
+      <a href="#mg16"></a>
+      <img src="slike/ukradena_kamenja/granit/zimbabwe_black.jpg" alt="Image 16">
+    </div>
+
+    <div id="img17" class="lightbox">
+      <a href="#img17"></a>
+      <img src="slike/ukradena_kamenja/granit/verde_marina.jpg" alt="Image 17">
+    </div>
+
+    <div id="img18" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/verde_gloria.jpg" alt="Image 18">
+    </div>
+
+    <div id="img19" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/giallo_veneziano.jpg" alt="Image 19">
+    </div>
+
+    <div id="img20" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/rosa_porrino.jpg" alt="Image 20">
+    </div>
+
+    <div id="img21" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/rosa_beta.jpg" alt="Image 21">
+    </div>
+
+    <div id="img22" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/paradiso_bash.jpg" alt="Image 22">
+    </div>
+
+    <div id="img23" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/paradiso.jpg" alt="Image 23">
+    </div>
+    
+    <div id="img24" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/paradiso-light.jpg" alt="Image 24">
+    </div>
+
+    <div id="img25" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/olive-green.jpg" alt="Image 25">
+    </div>
+
+    <div id="img26" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/new_imperial_red.jpg" alt="Image 26">
+    </div>
+
+    <div id="img27" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/nero_angola.jpg" alt="Image 27">
+    </div>
+
+    <div id="img28" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/nero-zimbabwe-cetkano.jpg" alt="Image 28">
+    </div>
+
+    <div id="img29" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/multicolor_red.jpg" alt="Image 29">
+    </div>
+
+    <div id="img30" class="lightbox">
+      <a href="#"></a>
+      <img src="slike/ukradena_kamenja/granit/labrador_emerald_pearl.jpg" alt="Image 30">
+    </div>
+
     </div>
     <!-- End photo grid -->
     
